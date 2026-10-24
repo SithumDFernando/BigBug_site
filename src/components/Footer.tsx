@@ -2,6 +2,8 @@ import React from 'react';
 import { ArrowUp } from 'lucide-react';
 import { soundEngine } from '../utils/audio';
 
+const currentYear = new Date().getFullYear();
+
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
     soundEngine.playBlip(1000);
@@ -108,7 +110,7 @@ export const Footer: React.FC = () => {
             gap: '12px',
           }}
         >
-          <div>BIGBUG © {new Date().getFullYear()}</div>
+          <div>BIGBUG © {currentYear}</div>
           <div style={{ color: '#00FF88' }}>● LAUNCHING SOON</div>
         </div>
       </div>
